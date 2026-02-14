@@ -1,4 +1,5 @@
 import React from 'react'
+//@ts-ignore
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import {
   Dialog,
