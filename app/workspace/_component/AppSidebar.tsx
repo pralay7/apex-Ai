@@ -58,8 +58,9 @@ export function AppSidebar() {
 
             {projectList.length>0?projectList?.map((item , index)=>{
           return (
-            //@ts-ignore
+              //@ts-ignore
             <Link href={`playground/${item.projectId}?frameId=${item.frameId}`} className="my-2 hover:bg-secondary p-2">
+              {/* @ts-ignore */}
               <h2 className="line-clamp-1 ">{item.chats[0].chatMessages[0].content}</h2>
             </Link>
           )

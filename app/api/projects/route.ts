@@ -27,6 +27,7 @@ export async function POST(req:NextRequest) {
         projectId:projectId
     })
     if(!hasUnlimiteAcess && credits<=0){
+        //@ts-ignore
         const result= await db.update(usersTable).set({credits:credits-1}).where(eq(usersTable.email,user?.primaryEmailAddress?.emailAddress))
     }
 
